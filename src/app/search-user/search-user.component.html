@@ -1,0 +1,17 @@
+<div class="col-md-6 offset-md-3">
+  <h3> Search User</h3>
+  <form>
+    <div class="form-group">
+      <label> Id</label>
+      <input type="text" class ="form-control" id = "id1"  name="id1" #id1>
+      <button type="button" (click)="onSubmit(id1.value)">search</button>
+    </div>
+
+  </form>
+
+  <p *ngIf="user.title==null" >No search record found</p>
+  <p>{{user.id}}</p>
+  <p>{{user.userId}}</p>
+  <p>{{user.title}}</p>
+  <p>{{user.completed}}</p>
+</div>
